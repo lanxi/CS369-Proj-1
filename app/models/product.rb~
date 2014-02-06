@@ -1,0 +1,4 @@
+class Product < ActiveRecord::Base
+  belongs_to :brand
+  validates :content, length: { maximum: 140 }
+end
